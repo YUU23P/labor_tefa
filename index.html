@@ -67,14 +67,21 @@
         <ul class="hidden md:flex space-x-10 font-semibold">
           <li><a href="#home" class="flex items-center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-2"></i>Home</a></li>
           <li><a href="#tentang" class="flex items-center hover:text-blue-300 transition"><i data-feather="info" class="w-5 h-5 mr-2"></i>Tentang</a></li>
-          <li><a href="#layanan" class="flex items-center hover:text-blue-300 transition"><i data-feather="briefcase" class="w-5 h-5 mr-2"></i>Layanan</a></li>
+          <li class="relative group">
+            <a href="#" class="flex items-center hover:text-blue-300 transition"><i data-feather="briefcase" class="w-5 h-5 mr-2"></i>Layanan</a>
+            <div class="absolute left-0 hidden group-hover:block bg-black text-blue-400 rounded-lg shadow-lg mt-2">
+              <a href="pc.html" class="block px-4 py-2 hover:bg-blue-500">Pelatihan Codingan</a>
+              <a href="wd.html" class="block px-4 py-2 hover:bg-blue-500">Manajemen Proyek</a>
+              <a href="kd.html" class="block px-4 py-2 hover:bg-blue-500">Design Grafis</a>
+              <a href="so.html" class="block px-4 py-2 hover:bg-blue-500">SEO Optimization</a>
+              <a href="cw.html" class="block px-4 py-2 hover:bg-blue-500">Web Design</a>
+              <a href="dm.html" class="block px-4 py-2 hover:bg-blue-500">Digital Marketing</a>
+            </div>
+          </li>
           <li><a href="#artikel" class="flex items-center hover:text-blue-300 transition"><i data-feather="file-text" class="w-5 h-5 mr-2"></i>Artikel</a></li>
           <li><a href="kontak.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="mail" class="w-5 h-5 mr-2"></i>Kontak</a></li>
           <li><a href="login.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="log-in" class="w-5 h-5 mr-2"></i>Login</a></li>
         </ul>
-        <button id="mobile-menu-button" class="md:hidden flex items-center hover:text-blue-300 focus:outline-none">
-          <i data-feather="menu" class="w-7 h-7"></i>
-        </button>
       </nav>
     </div>
     <!-- Mobile Menu -->
@@ -122,7 +129,9 @@
           <h3 class="text-3xl font-semibold tracking-wide">Pelatihan Coding</h3>
         </div>
         <p class="text-blue-300 text-lg">Belajar website dari nol sampai mahir.</p>
+        
       </div>
+      
       <!-- Layanan 2 -->
       <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-design">
         <div class="flex items-center mb-8 text-blue-400">
@@ -130,6 +139,7 @@
           <h3 class="text-3xl font-semibold tracking-wide">Web Design</h3>
         </div>
         <p class="text-blue-300 text-lg">Desain website responsif dan estetik.</p>
+        
       </div>
       <!-- Layanan 3 -->
       <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-konsultasi">
@@ -138,6 +148,7 @@
           <h3 class="text-3xl font-semibold tracking-wide">Konsultasi Digital</h3>
         </div>
         <p class="text-blue-300 text-lg">Strategi digital marketing & web dev.</p>
+        
       </div>
       <!-- Layanan 4 -->
       <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-seo">
@@ -146,6 +157,7 @@
           <h3 class="text-3xl font-semibold tracking-wide">SEO Optimization</h3>
         </div>
         <p class="text-blue-300 text-lg">Optimasi website untuk hasil pencarian terbaik di Google.</p>
+        
       </div>
       <!-- Layanan 5 -->
       <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-content">
@@ -154,6 +166,7 @@
           <h3 class="text-3xl font-semibold tracking-wide">Content Writing</h3>
         </div>
         <p class="text-blue-300 text-lg">Pembuatan konten website yang menarik dan efektif.</p>
+        
       </div>
       <!-- Layanan 6 -->
       <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-marketing">
@@ -162,42 +175,10 @@
           <h3 class="text-3xl font-semibold tracking-wide">Digital Marketing</h3>
         </div>
         <p class="text-blue-300 text-lg">Strategi pemasaran digital untuk bisnis Anda.</p>
+        
       </div>
     </div>
   </section>
-  
-      <!-- MODAL START -->
-      <!-- Modal Template -->
-      <div id="modal-coding" class="modal hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-6">
-        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative">
-          <button class="close-modal absolute top-4 right-4 text-gray-600 hover:text-black">
-            <i data-feather="x" class="w-6 h-6"></i>
-          </button>
-          <h3 class="text-2xl font-bold mb-4 text-black">Pelatihan Coding</h3>
-          <p class="text-gray-700">Program pelatihan intensif untuk membangun website dari awal menggunakan HTML, CSS, JavaScript, dan framework modern seperti Tailwind, React, dan lainnya. Cocok untuk pemula maupun yang ingin upgrade skill.</p>
-        </div>
-      </div>
-      
-      <div id="modal-design" class="modal hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-6">
-        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative">
-          <button class="close-modal absolute top-4 right-4 text-gray-600 hover:text-black">
-            <i data-feather="x" class="w-6 h-6"></i>
-          </button>
-          <h3 class="text-2xl font-bold mb-4 text-black">Web Design</h3>
-          <p class="text-gray-700">Belajar mendesain tampilan web yang menarik, mobile-friendly, dan user-focused menggunakan prinsip desain UI/UX serta tools populer seperti Figma, Canva, hingga CSS Flex dan Grid.</p>
-        </div>
-      </div>
-      
-      <div id="modal-konsultasi" class="modal hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-6">
-        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative">
-          <button class="close-modal absolute top-4 right-4 text-gray-600 hover:text-black">
-            <i data-feather="x" class="w-6 h-6"></i>
-          </button>
-          <h3 class="text-2xl font-bold mb-4 text-black">Konsultasi Digital</h3>
-          <p class="text-gray-700">Diskusi 1-on-1 untuk merancang strategi digital marketing, SEO, social media, dan pengembangan website bisnis Anda. Dapatkan insight dan solusi praktis dari ahli kami.</p>
-        </div>
-      </div>
-
     <!-- Artikel -->
     <section id="artikel" class="py-24 bg-black text-blue-400 px-8 max-w-7xl mx-auto rounded-xl shadow-xl">
       <h2 class="text-5xl font-bold mb-14 text-center drop-shadow-md">Artikel Terbaru</h2>
@@ -261,7 +242,7 @@
   
     <!-- Footer bawah -->
     <div class="border-t border-blue-300 text-center py-4 text-sm text-black/70">
-      &copy; 2024 Labor Tefa. All rights reserved.
+      &copy; 2025 Labor Tefa. Desain By : 
     </div>
   </footer>
   
@@ -276,32 +257,7 @@
     mobileMenu.classList.toggle('hidden');
   });
 
-  // Modal logic
-  const layananItems = document.querySelectorAll('.layanan-item');
-  const modals = document.querySelectorAll('.modal');
-  const closeButtons = document.querySelectorAll('.close-modal');
-
-  layananItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const modalId = item.getAttribute('data-modal');
-      document.getElementById(modalId).classList.remove('hidden');
-    });
-  });
-
-  closeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.closest('.modal').classList.add('hidden');
-    });
-  });
-
-  // Close modal when clicking outside the modal box
-  modals.forEach(modal => {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-      }
-    });
-  });
+  
   </script>
 </body>
 </html>

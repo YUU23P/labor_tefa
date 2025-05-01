@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Labor Tefa - Pelatihan Website Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        colors: {
+          black: { DEFAULT: '#000000', 50: '#e6e6e6', 100: '#cccccc', 200: '#999999', 300: '#666666', 400: '#333333', 500: '#000000', 600: '#000000', 700: '#000000', 800: '#000000', 900: '#000000' },
+          blue: { 50: "#ebf8ff", 100: "#bee3f8", 200: "#90cdf4", 300: "#63b3ed", 400: "#4299e1", 500: "#3182ce", 600: "#2b6cb0", 700: "#2c5282", 800: "#2a4362", 900: "#1A365D" },
+          transparent: "transparent",
+          current: "currentColor",
+          white: "#fff",
+          gray: { 50: "#f9fafb", 100: "#f3f4f6", 200: "#e5e7eb", 300: "#d1d5db", 400: "#9ca3af", 500: "#6b7280", 600: "#4b5563", 700: "#374151", 800: "#1f2937", 900: "#111827" }
+        },
+      },
+    }
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-blue-400 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black border-b border-blue-500 fixed w-full z-30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex justify-between items-center h-16">
+      <a href="index.html" class="text-blue-400 text-3xl font-extrabold tracking-wide drop-shadow-lg">Labor Tefa</a>
+      <nav>
+        <ul class="hidden md:flex space-x-10 font-semibold">
+          <li><a href="index.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-2"></i>Home</a></li>
+        </ul>
+        <button id="mobile-menu-button" class="md:hidden flex items-center hover:text-blue-300 focus:outline-none">
+          <i data-feather="menu" class="w-7 h-7"></i>
+        </button>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-blue-500">
+      <ul class="flex flex-col p-5 space-y-3 font-semibold text-blue-400">
+        <li><a href="index.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-3"></i>Home</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Konten Layanan -->
+  <main class="pt-20">
+    <section id="layanan" class="py-24 bg-blue-400 max-w-7xl mx-auto px-8 rounded-xl shadow-xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Coding -->
+        <div onclick="openModal('modal-coding')" class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer">
+          <div class="flex items-center mb-8 text-blue-400">
+            <i data-feather="code" class="w-11 h-11 mr-5"></i>
+            <h3 class="text-2xl font-semibold tracking-wide">Pelatihan Coding</h3>
+          </div>
+        </div>
+        <!-- Desain Grafis -->
+        <div onclick="openModal('modal-desain')" class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer">
+          <div class="flex items-center mb-8 text-blue-400">
+            <i data-feather="image" class="w-11 h-11 mr-5"></i>
+            <h3 class="text-2xl font-semibold tracking-wide">Desain Grafis</h3>
+          </div>
+        </div>
+        <!-- Digital Marketing -->
+        <div onclick="openModal('modal-marketing')" class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer">
+          <div class="flex items-center mb-8 text-blue-400">
+            <i data-feather="bar-chart-2" class="w-11 h-11 mr-5"></i>
+            <h3 class="text-2xl font-semibold tracking-wide">Digital Marketing</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div id="modal-content" class="bg-white text-black rounded-xl p-8 w-full max-w-2xl relative">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-black hover:text-gray-700">
+        <i data-feather="x" class="w-6 h-6"></i>
+      </button>
+      <div id="modal-inner" class="text-base"></div>
+    </div>
+  </div>
+
+  <!-- Modal Data -->
+  <script>
+    const modals = {
+      "modal-coding": `
+        <h2 class="text-2xl font-bold mb-3 text-blue-700">Pelatihan Coding</h2>
+        <p class="mb-4 text-gray-700">Pelatihan ini membekali peserta dengan keterampilan pemrograman web dari dasar hingga mahir. Materi meliputi HTML, CSS, JavaScript, hingga framework modern seperti React dan Laravel. Sangat cocok bagi pemula, siswa SMK, mahasiswa, dan umum yang ingin berkarier di dunia IT.</p>
+        <ul class="mb-4 text-sm text-gray-800">
+          <li><strong>🗓 Jadwal:</strong> Senin & Rabu, 13.00 - 16.00 WIB</li>
+          <li><strong>📍 Lokasi:</strong> Laboratorium Tefa, SMK Negeri 1 Contoh</li>
+          <li><strong>👨‍🏫 Pengajar:</strong> Bapak Arif Rahman, S.Kom</li>
+        </ul>
+      `,
+      "modal-desain": `
+        <h2 class="text-2xl font-bold mb-3 text-blue-700">Pelatihan Desain Grafis</h2>
+        <p class="mb-4 text-gray-700">Pelatihan ini memperkenalkan peserta pada prinsip dasar desain grafis dan penggunaan software populer seperti Adobe Photoshop dan Illustrator. Cocok untuk siswa SMK, mahasiswa, dan pelaku UMKM yang ingin meningkatkan branding.</p>
+        <ul class="mb-4 text-sm text-gray-800">
+          <li><strong>🗓 Jadwal:</strong> Selasa & Kamis, 09.00 - 12.00 WIB</li>
+          <li><strong>📍 Lokasi:</strong> Ruang Desain, Labor Tefa</li>
+          <li><strong>👩‍🏫 Pengajar:</strong> Ibu Rina Oktaviani, S.Sn</li>
+        </ul>
+      `,
+      "modal-marketing": `
+        <h2 class="text-2xl font-bold mb-3 text-blue-700">Pelatihan Digital Marketing</h2>
+        <p class="mb-4 text-gray-700">Pelatihan ini fokus pada strategi pemasaran digital seperti SEO, media sosial, email marketing, dan Google Ads. Peserta akan mempelajari cara membangun kampanye digital untuk memaksimalkan jangkauan bisnis.</p>
+        <ul class="mb-4 text-sm text-gray-800">
+          <li><strong>🗓 Jadwal:</strong> Jumat, 09.00 - 15.00 WIB</li>
+          <li><strong>📍 Lokasi:</strong> Aula Serbaguna Tefa</li>
+          <li><strong>👨‍🏫 Pengajar:</strong> Bapak Dedi Prasetyo, M.M.</li>
+        </ul>
+      `
+    };
+
+    function openModal(id) {
+      document.getElementById('modal-inner').innerHTML = modals[id];
+      document.getElementById('modal-overlay').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('modal-overlay').classList.add('hidden');
+    }
+  </script>
+
+  <script>
+    feather.replace();
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

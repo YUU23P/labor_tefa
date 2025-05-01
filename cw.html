@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pelatihan Web Design - Labor Tefa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-blue-400 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black border-b border-blue-500 fixed w-full z-30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex justify-between items-center h-16">
+      <a href="index.html" class="text-blue-400 text-3xl font-extrabold tracking-wide drop-shadow-lg">Labor Tefa</a>
+      <nav>
+        <ul class="hidden md:flex space-x-10 font-semibold">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="kontak.html" class="hover:text-blue-300 transition">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-20 px-8 max-w-7xl mx-auto space-y-12">
+
+    <!-- Title -->
+    <section class="text-center">
+      <h1 class="text-5xl font-bold mb-6 text-white">Pelatihan Web Design</h1>
+      <p class="text-xl text-blue-300 max-w-2xl mx-auto">
+        Pelatihan Web Design ini dirancang untuk memberikan Anda keterampilan desain web yang diperlukan untuk membuat website yang menarik dan fungsional. Anda akan belajar tentang prinsip desain, user interface (UI), user experience (UX), dan teknologi desain web terbaru.
+      </p>
+    </section>
+
+    <!-- Icon and Image Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Image -->
+      <div class="bg-black rounded-xl shadow-lg overflow-hidden">
+        <img src="foto/web-design.jpeg" alt="Pelatihan Web Design" class="w-full h-96 object-cover"/>
+      </div>
+
+      <!-- Details -->
+      <div class="text-blue-300">
+        <h3 class="text-3xl font-bold mb-4 flex items-center"><i data-feather="layout" class="w-6 h-6 mr-3"></i> Tentang Pelatihan Web Design</h3>
+        <p class="mb-4">Pelatihan ini mengajarkan teknik dasar hingga lanjutan dalam desain website, termasuk prinsip desain visual, penataan layout, serta bagaimana menggabungkan elemen-elemen desain agar website tidak hanya menarik tetapi juga mudah digunakan.</p>
+
+        <p class="mb-4">Peserta pelatihan akan mempelajari berbagai alat dan perangkat lunak desain web seperti Figma, Adobe XD, dan Sketch. Selain itu, pelatihan ini juga akan mengajarkan tentang pembuatan prototipe dan wireframe untuk merencanakan struktur situs yang efektif.</p>
+
+        <p><strong>Keuntungan:</strong></p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>Mempelajari teknik desain UI/UX untuk meningkatkan pengalaman pengguna di website.</li>
+          <li>Menguasai penggunaan alat desain web profesional seperti Figma dan Adobe XD.</li>
+          <li>Mengetahui cara mengintegrasikan desain dengan pengembangan website.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Schedule and Instructor -->
+    <section class="bg-blue-500 text-black p-10 rounded-xl shadow-lg">
+      <h3 class="text-3xl font-bold text-center mb-8">Jadwal Pelatihan</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Schedule -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Jadwal Pelatihan</h4>
+          <p class="text-lg">Pelatihan Web Design dilakukan dalam sesi yang komprehensif untuk memberikan pemahaman tentang dasar hingga teknik lanjutan dalam mendesain website yang responsif dan menarik.</p>
+          <ul class="list-none mt-4">
+            <li><strong>Hari:</strong> Selasa, Kamis, Sabtu</li>
+            <li><strong>Waktu:</strong> 13:00 - 16:00 WIB</li>
+            <li><strong>Durasi:</strong> 6 minggu</li>
+          </ul>
+        </div>
+
+        <!-- Instructor -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Instruktur</h4>
+          <p class="text-lg">Instruktur kami adalah seorang desainer web profesional dengan pengalaman lebih dari 8 tahun dalam industri teknologi dan desain. Beliau telah bekerja dengan berbagai perusahaan besar untuk menciptakan website yang intuitif dan user-friendly.</p>
+          <div class="flex items-center mt-4">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Instruktur" class="w-16 h-16 rounded-full mr-4">
+            <div>
+              <p class="font-semibold">Sarah Johnson</p>
+              <p class="text-sm">Desainer Web & Instruktur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-blue-400 py-6 text-center">
+    <p>&copy; 2025 Labor Tefa. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script> feather.replace(); </script>
+</body>
+</html>

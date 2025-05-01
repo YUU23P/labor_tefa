@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pelatihan Codingan - Labor Tefa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-blue-400 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black border-b border-blue-500 fixed w-full z-30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex justify-between items-center h-16">
+      <a href="index.html" class="text-blue-400 text-3xl font-extrabold tracking-wide drop-shadow-lg">Labor Tefa</a>
+      <nav>
+        <ul class="hidden md:flex space-x-10 font-semibold">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="kontak.html" class="hover:text-blue-300 transition">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-20 px-8 max-w-7xl mx-auto space-y-12">
+
+    <!-- Title -->
+    <section class="text-center">
+      <h1 class="text-5xl font-bold mb-6 text-white">Pelatihan Codingan</h1>
+      <p class="text-xl text-blue-300 max-w-2xl mx-auto">
+        Pelatihan codingan di Labor Tefa akan mengajarkan Anda dari dasar hingga mahir dalam membangun website, menggunakan berbagai teknologi terkini. 
+        Di sini, Anda akan belajar dengan metode yang mudah dipahami, serta mendapatkan pengalaman langsung dalam pembuatan proyek web.
+      </p>
+    </section>
+
+    <!-- Icon and Image Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Image -->
+      <div class="bg-black rounded-xl shadow-lg overflow-hidden">
+        <img src="foto/ft3.jpg" alt="Pelatihan Coding" class="w-full h-96 object-cover"/>
+      </div>
+
+      <!-- Details -->
+      <div class="text-blue-300">
+        <h3 class="text-3xl font-bold mb-4 flex items-center"><i data-feather="code" class="w-6 h-6 mr-3"></i> Tentang Pelatihan Codingan</h3>
+        <p class="mb-4">Pelatihan Codingan ini ditujukan untuk para pemula yang ingin memahami dasar-dasar pemrograman dan pengembangan website. Anda akan mempelajari berbagai bahasa pemrograman seperti HTML, CSS, JavaScript, dan juga framework populer seperti React dan Vue.js.</p>
+
+        <p class="mb-4">Pelatihan ini bersifat praktis, di mana peserta akan langsung membuat website yang fungsional dan estetis. Kami menyediakan berbagai tantangan coding yang akan mengasah kemampuan problem-solving peserta dalam konteks dunia nyata.</p>
+
+        <p class="mb-4">Setiap peserta akan dibimbing oleh instruktur yang berpengalaman di bidangnya dan akan mendapatkan kesempatan untuk berkolaborasi dengan sesama peserta dalam proyek pengembangan website.</p>
+
+        <p><strong>Keuntungan:</strong></p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>Belajar dari dasar hingga mahir dalam pengembangan website.</li>
+          <li>Menggunakan teknologi terbaru dan populer di dunia pengembangan web.</li>
+          <li>Pengajaran yang mudah dipahami dan berorientasi pada praktik langsung.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Schedule and Instructor -->
+    <section class="bg-blue-500 text-black p-10 rounded-xl shadow-lg">
+      <h3 class="text-3xl font-bold text-center mb-8">Jadwal Pelatihan</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Schedule -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Jadwal Pelatihan</h4>
+          <p class="text-lg">Pelatihan akan dilaksanakan setiap minggu, dengan sesi mingguan selama 4 minggu berturut-turut.</p>
+          <ul class="list-none mt-4">
+            <li><strong>Hari:</strong> Senin, Rabu, Jumat</li>
+            <li><strong>Waktu:</strong> 09:00 - 12:00 WIB</li>
+            <li><strong>Durasi:</strong> 4 minggu</li>
+          </ul>
+        </div>
+
+        <!-- Instructor -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Instruktur</h4>
+          <p class="text-lg">Pelatihan ini dipandu oleh para profesional yang memiliki pengalaman lebih dari 5 tahun di dunia pengembangan web, dengan portofolio proyek yang mengesankan.</p>
+          <div class="flex items-center mt-4">
+            <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Instruktur" class="w-16 h-16 rounded-full mr-4">
+            <div>
+              <p class="font-semibold">John Doe</p>
+              <p class="text-sm">Pengembang Web & Instruktur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-blue-400 py-6 text-center">
+    <p>&copy; 2025 Labor Tefa. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script> feather.replace(); </script>
+</body>
+</html>
