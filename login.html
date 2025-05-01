@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Labor Tefa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        colors: {
+          black: {
+            DEFAULT: '#000000',
+            50: '#e6e6e6',
+            100: '#cccccc',
+            200: '#999999',
+            300: '#666666',
+            400: '#333333',
+            500: '#000000',
+            600: '#000000',
+            700: '#000000',
+            800: '#000000',
+            900: '#000000',
+          },
+          blue: {
+            50: "#ebf8ff",
+            100: "#bee3f8",
+            200: "#90cdf4",
+            300: "#63b3ed",
+            400: "#4299e1",
+            500: "#3182ce",
+            600: "#2b6cb0",
+            700: "#2c5282",
+            800: "#2a4362",
+            900: "#1A365D"
+          },
+          transparent: "transparent",
+          current: "currentColor",
+          white: "#fff",
+          gray: {
+            50: "#f9fafb",
+            100: "#f3f4f6",
+            200: "#e5e7eb",
+            300: "#d1d5db",
+            400: "#9ca3af",
+            500: "#6b7280",
+            600: "#4b5563",
+            700: "#374151",
+            800: "#1f2937",
+            900: "#111827"
+          }
+        },
+      },
+    }
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-blue-400 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black border-b border-blue-500 fixed w-full z-30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex justify-between items-center h-16">
+      <a href="index.html" class="text-blue-400 text-3xl font-extrabold tracking-wide drop-shadow-lg">Labor Tefa</a>
+      <nav>
+        <ul class="hidden md:flex space-x-10 font-semibold">
+          <li><a href="index.html#home" class="flex items-center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-2"></i>Home</a></li>
+          <li><a href="index.html#tentang" class="flex items-center hover:text-blue-300 transition"><i data-feather="info" class="w-5 h-5 mr-2"></i>Tentang</a></li>
+          <li><a href="index.html#layanan" class="flex items-center hover:text-blue-300 transition"><i data-feather="briefcase" class="w-5 h-5 mr-2"></i>Layanan</a></li>
+          <li><a href="index.html#artikel" class="flex items-center hover:text-blue-300 transition"><i data-feather="file-text" class="w-5 h-5 mr-2"></i>Artikel</a></li>
+          <li><a href="kontak.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="mail" class="w-5 h-5 mr-2"></i>Kontak</a></li>
+          <li><a href="login.html" class="flex items-center font-bold text-blue-300"><i data-feather="log-in" class="w-5 h-5 mr-2"></i>Login</a></li>
+        </ul>
+        <button id="mobile-menu-button" class="md:hidden flex items-center hover:text-blue-300 focus:outline-none">
+          <i data-feather="menu" class="w-7 h-7"></i>
+        </button>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-blue-500">
+      <ul class="flex flex-col p-5 space-y-3 font-semibold text-blue-400">
+        <li><a href="index.html#home" class="flex items -center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-3"></i>Home</a></li>
+        <li><a href="index.html#tentang" class="flex items-center hover:text-blue-300 transition"><i data-feather="info" class="w-5 h-5 mr-3"></i>Tentang</a></li>
+        <li><a href="index.html#layanan" class="flex items-center hover:text-blue-300 transition"><i data-feather="briefcase" class="w-5 h-5 mr-3"></i>Layanan</a></li>
+        <li><a href="index.html#artikel" class="flex items-center hover:text-blue-300 transition"><i data-feather="file-text" class="w-5 h-5 mr-3"></i>Artikel</a></li>
+        <li><a href="kontak.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="mail" class="w-5 h-5 mr-3"></i>Kontak</a></li>
+        <li><a href="login.html" class="flex items-center font-bold hover:text-blue-300 transition"><i data-feather="log-in" class="w-5 h-5 mr-3"></i>Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20 max-w-md mx-auto py-28 px-8">
+    <h2 class="text-5xl font-bold mb-14 text-blue-400 text-center drop-shadow-lg tracking-wide">Login</h2>
+    <form class="bg-blue-400 p-12 rounded-3xl shadow-2xl space-y-10">
+      <div>
+        <label for="email-login" class="block text-lg font-semibold text-black mb-3">Email</label>
+        <input type="email" id="email-login" name="email-login" placeholder="email@domain.com" class="w-full border border-blue-300 rounded-xl px-6 py-4 focus:outline-none focus:ring-4 focus:ring-black text-black font-medium" />
+      </div>
+      <div>
+        <label for="password-login" class="block text-lg font-semibold text-black mb-3">Password</label>
+        <input type="password" id="password-login" name="password-login" placeholder="Password" class="w-full border border-blue-300 rounded-xl px-6 py-4 focus:outline-none focus:ring-4 focus:ring-black text-black font-medium" />
+      </div>
+      <button type="submit" class="w-full bg-black hover:bg-gray-900 text-blue-400 font-extrabold text-lg rounded-3xl py-5 shadow-lg transition-shadow tracking-wide">Masuk</button>
+    </form>
+  </main>
+
+  <footer class="bg-black text-blue-400 text-center py-8 mt-24 font-bold tracking-widest drop-shadow-lg">
+    <p>&copy; 2024 Labor Tefa. All rights reserved.</p>
+  </footer>
+
+  <script>
+    feather.replace();
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

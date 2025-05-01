@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Labor Tefa - Pelatihan Website Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        colors: {
+          black: {
+            DEFAULT: '#000000',
+            50: '#e6e6e6',
+            100: '#cccccc',
+            200: '#999999',
+            300: '#666666',
+            400: '#333333',
+            500: '#000000',
+            600: '#000000',
+            700: '#000000',
+            800: '#000000',
+            900: '#000000',
+          },
+          blue: {
+            50: "#ebf8ff",
+            100: "#bee3f8",
+            200: "#90cdf4",
+            300: "#63b3ed",
+            400: "#4299e1",
+            500: "#3182ce",
+            600: "#2b6cb0",
+            700: "#2c5282",
+            800: "#2a4362",
+            900: "#1A365D"
+          },
+          transparent: "transparent",
+          current: "currentColor",
+          white: "#fff",
+          gray: {
+            50: "#f9fafb",
+            100: "#f3f4f6",
+            200: "#e5e7eb",
+            300: "#d1d5db",
+            400: "#9ca3af",
+            500: "#6b7280",
+            600: "#4b5563",
+            700: "#374151",
+            800: "#1f2937",
+            900: "#111827"
+          }
+        },
+      },
+    }
+  </script>
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-blue-400 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black border-b border-blue-500 fixed w-full z-30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex justify-between items-center h-16">
+      <a href="index.html" class="text-blue-400 text-3xl font-extrabold tracking-wide drop-shadow-lg">Labor Tefa</a>
+      <nav>
+        <ul class="hidden md:flex space-x-10 font-semibold">
+          <li><a href="#home" class="flex items-center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-2"></i>Home</a></li>
+          <li><a href="#tentang" class="flex items-center hover:text-blue-300 transition"><i data-feather="info" class="w-5 h-5 mr-2"></i>Tentang</a></li>
+          <li><a href="#layanan" class="flex items-center hover:text-blue-300 transition"><i data-feather="briefcase" class="w-5 h-5 mr-2"></i>Layanan</a></li>
+          <li><a href="#artikel" class="flex items-center hover:text-blue-300 transition"><i data-feather="file-text" class="w-5 h-5 mr-2"></i>Artikel</a></li>
+          <li><a href="kontak.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="mail" class="w-5 h-5 mr-2"></i>Kontak</a></li>
+          <li><a href="login.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="log-in" class="w-5 h-5 mr-2"></i>Login</a></li>
+        </ul>
+        <button id="mobile-menu-button" class="md:hidden flex items-center hover:text-blue-300 focus:outline-none">
+          <i data-feather="menu" class="w-7 h-7"></i>
+        </button>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-blue-500">
+      <ul class="flex flex-col p-5 space-y-3 font-semibold text-blue-400">
+        <li><a href="# home" class="flex items-center hover:text-blue-300 transition"><i data-feather="home" class="w-5 h-5 mr-3"></i>Home</a></li>
+        <li><a href="#tentang" class="flex items-center hover:text-blue-300 transition"><i data-feather="info" class="w-5 h-5 mr-3"></i>Tentang</a></li>
+        <li><a href="#layanan" class="flex items-center hover:text-blue-300 transition"><i data-feather="briefcase" class="w-5 h-5 mr-3"></i>Layanan</a></li>
+        <li><a href="#artikel" class="flex items-center hover:text-blue-300 transition"><i data-feather="file-text" class="w-5 h-5 mr-3"></i>Artikel</a></li>
+        <li><a href="kontak.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="mail" class="w-5 h-5 mr-3"></i>Kontak</a></li>
+        <li><a href="login.html" class="flex items-center hover:text-blue-300 transition"><i data-feather="log-in" class="w-5 h-5 mr-3"></i>Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 text-black px-8 text-center rounded-b-3xl shadow-lg">
+      <h1 class="text-7xl font-extrabold mb-6 tracking-widest drop-shadow-xl">LABOR TEFA</h1>
+      <p class="max-w-4xl text-xl md:text-2xl mb-10 font-semibold drop-shadow-md">Pelatihan Website Digital dengan berbagai fitur inovatif dan pengalaman belajar yang menyenangkan, mempersiapkan Anda menjadi profesional digital handal.</p>
+      <a href="#layanan" class="inline-block bg-black text-blue-400 hover:text-blue-300 font-extrabold px-10 py-4 rounded-full shadow-lg transition tracking-wide">Jelajahi Layanan Kami</a>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-24 bg-black text-blue-400 px-8 max-w-7xl mx-auto rounded-xl shadow-lg">
+      <div class="flex flex-col md:flex-row md:space-x-16 items-center">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Tentang Labor Tefa" class="rounded-xl shadow-lg w-full md:w-1/2 mb-8 md:mb-0 border-4 border-blue-400" />
+        <div class="md:w-1/2 space-y-8">
+          <h2 class="text-5xl font-bold tracking-tight">Tentang Labor Tefa</h2>
+          <p class="text-blue-300 text-lg leading-relaxed">Labor Tefa adalah pusat pelatihan website digital terdepan, menyediakan konten dan fitur interaktif yang dirancang mudah dipahami oleh pemula hingga profesional. Kami memadukan metode modern dan pengalaman praktis untuk hasil maksimal.</p>
+          <p class="text-blue-300 text-lg leading-relaxed">Kami berkomitmen mendampingi peserta dengan teknologi terbaru dan strategi digital yang relevan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="py-24 bg-blue-400 max-w-7xl mx-auto px-8 rounded-xl shadow-xl">
+        <h2 class="text-5xl font-bold text-black mb-14 text-center drop-shadow-md">Layanan Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-coding">
+            <div class="flex items-center mb-8 text-blue-400">
+              <i data-feather="code" class="w-11 h-11 mr-5"></i>
+              <h3 class="text-3xl font-semibold tracking-wide">Pelatihan Coding</h3>
+            </div>
+            <p class="text-blue-300 text-lg">Belajar website dari nol sampai mahir.</p>
+          </div>
+          <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-design">
+            <div class="flex items-center mb-8 text-blue-400">
+              <i data-feather="monitor" class="w-11 h-11 mr-5"></i>
+              <h3 class="text-3xl font-semibold tracking-wide">Web Design</h3>
+            </div>
+            <p class="text-blue-300 text-lg">Desain website responsif dan estetik.</p>
+          </div>
+          <div class="bg-black rounded-3xl shadow-2xl p-10 transform hover:scale-105 transition duration-500 cursor-pointer layanan-item" data-modal="modal-konsultasi">
+            <div class="flex items-center mb-8 text-blue-400">
+              <i data-feather="users" class="w-11 h-11 mr-5"></i>
+              <h3 class="text-3xl font-semibold tracking-wide">Konsultasi Digital</h3>
+            </div>
+            <p class="text-blue-300 text-lg">Strategi digital marketing & web dev.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- MODAL START -->
+      <!-- Modal Template -->
+      <div id="modal-coding" class="modal hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-6">
+        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative">
+          <button class="close-modal absolute top-4 right-4 text-gray-600 hover:text-black">
+            <i data-feather="x" class="w-6 h-6"></i>
+          </button>
+          <h3 class="text-2xl font-bold mb-4 text-black">Pelatihan Coding</h3>
+          <p class="text-gray-700">Program pelatihan intensif untuk membangun website dari awal menggunakan HTML, CSS, JavaScript, dan framework modern seperti Tailwind, React, dan lainnya. Cocok untuk pemula maupun yang ingin upgrade skill.</p>
+        </div>
+      </div>
+      
+      <div id="modal-design" class="modal hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-6">
+        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative">
+          <button class="close-modal absolute top-4 right-4 text-gray-600 hover:text-black">
+            <i data-feather="x" class="w-6 h-6"></i>
+          </button>
+          <h3 class="text-2xl font-bold mb-4 text-black">Web Design</h3>
+          <p class="text-gray-700">Belajar mendesain tampilan web yang menarik, mobile-friendly, dan user-focused menggunakan prinsip desain UI/UX serta tools populer seperti Figma, Canva, hingga CSS Flex dan Grid.</p>
+        </div>
+      </div>
+      
+      <div id="modal-konsultasi" class="modal hidden fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-6">
+        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative">
+          <button class="close-modal absolute top-4 right-4 text-gray-600 hover:text-black">
+            <i data-feather="x" class="w-6 h-6"></i>
+          </button>
+          <h3 class="text-2xl font-bold mb-4 text-black">Konsultasi Digital</h3>
+          <p class="text-gray-700">Diskusi 1-on-1 untuk merancang strategi digital marketing, SEO, social media, dan pengembangan website bisnis Anda. Dapatkan insight dan solusi praktis dari ahli kami.</p>
+        </div>
+      </div>
+
+    <!-- Artikel -->
+    <section id="artikel" class="py-24 bg-black text-blue-400 px-8 max-w-7xl mx-auto rounded-xl shadow-xl">
+      <h2 class="text-5xl font-bold mb-14 text-center drop-shadow-md">Artikel Terbaru</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-14">
+        <article class="bg-blue-400 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-3xl text-black mb-4 tracking-wide">Tips Membuat Website yang Efektif</h3>
+          <p class="text-black text-lg">Pelajari cara membangun website menarik dan fungsional untuk kantor atau bisnis Anda.</p>
+          <a href="#" class="inline-block mt-6 font-bold text-black hover:underline tracking-wide">Baca selengkapnya &rarr;</a>
+        </article>
+        <article class="bg-blue-400 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-3xl text-black mb-4 tracking-wide">Tren Desain Web 2024</h3>
+          <p class="text-black text-lg">Ketahui tren desain website profesional yang akan populer sepanjang tahun depan.</p>
+          <a href="#" class="inline-block mt-6 font-bold text-black hover:underline tracking-wide">Baca selengkapnya &rarr;</a>
+        </article>
+        <article class="bg-blue-400 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-3xl text-black mb-4 tracking-wide">Panduan Pemula untuk Digital Marketing</h3>
+          <p class="text-black text-lg">Mulai perjalanan marketing digital Anda dengan tutorial dan kiat praktis dari nol.</p>
+          <a href="#" class="inline-block mt-6 font-bold text-black hover:underline tracking-wide">Baca selengkapnya &rarr;</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-500 text-black mt-24">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-blue-300">
+      <!-- Tentang Kami -->
+      <div>
+        <h3 class="text-xl font-bold mb-4 tracking-wide">Tentang Kami</h3>
+        <p class="text-black/80 text-sm leading-relaxed">
+          Labor Tefa adalah pusat pelatihan website digital yang menyediakan berbagai kursus dan pelatihan untuk membantu Anda menjadi profesional digital yang handal.
+        </p>
+        <div class="flex space-x-5 mt-4">
+          <a href="#" class="hover:text-white transition"><i data-feather="facebook"></i></a>
+          <a href="#" class="hover:text-white transition"><i data-feather="instagram"></i></a>
+          <a href="#" class="hover:text-white transition"><i data-feather="twitter"></i></a>
+        </div>
+      </div>
+  
+      <!-- Navigasi -->
+      <div>
+        <h3 class="text-xl font-bold mb-4 tracking-wide">Navigasi</h3>
+        <ul class="space-y-2 text-black/80 text-sm">
+          <li><a href="#home" class="flex items-center hover:text-white transition"><i data-feather="home" class="w-4 h-4 mr-2"></i>Home</a></li>
+          <li><a href="#tentang" class="flex items-center hover:text-white transition"><i data-feather="info" class="w-4 h-4 mr-2"></i>Tentang</a></li>
+          <li><a href="#layanan" class="flex items-center hover:text-white transition"><i data-feather="briefcase" class="w-4 h-4 mr-2"></i>Layanan</a></li>
+          <li><a href="#artikel" class="flex items-center hover:text-white transition"><i data-feather="file-text" class="w-4 h-4 mr-2"></i>Artikel</a></li>
+          <li><a href="kontak.html" class="flex items-center hover:text-white transition"><i data-feather="mail" class="w-4 h-4 mr-2"></i>Kontak</a></li>
+        </ul>
+      </div>
+  
+      <!-- Kontak -->
+      <div>
+        <h3 class="text-xl font-bold mb-4 tracking-wide">Kontak</h3>
+        <ul class="text-black/80 text-sm space-y-2">
+          <li class="flex items-center"><i data-feather="mail" class="w-4 h-4 mr-2"></i><a href="mailto:info@labortefa.com" class="hover:text-white">info@labortefa.com</a></li>
+          <li class="flex items-center"><i data-feather="phone" class="w-4 h-4 mr-2"></i><a href="tel:+62123456789" class="hover:text-white">+62 123 456 789</a></li>
+          <li class="flex items-center"><i data-feather="map-pin" class="w-4 h-4 mr-2"></i>Jl. Pelatihan Digital No. 10</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Footer bawah -->
+    <div class="border-t border-blue-300 text-center py-4 text-sm text-black/70">
+      &copy; 2024 Labor Tefa. All rights reserved.
+    </div>
+  </footer>
+  
+  
+
+  <script>
+    feather.replace();
+
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Modal logic
+  const layananItems = document.querySelectorAll('.layanan-item');
+  const modals = document.querySelectorAll('.modal');
+  const closeButtons = document.querySelectorAll('.close-modal');
+
+  layananItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const modalId = item.getAttribute('data-modal');
+      document.getElementById(modalId).classList.remove('hidden');
+    });
+  });
+
+  closeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.modal').classList.add('hidden');
+    });
+  });
+
+  // Close modal when clicking outside the modal box
+  modals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+  </script>
+</body>
+</html>
